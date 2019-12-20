@@ -42,7 +42,12 @@ class ViewController: UITableViewController {
         case "ImageGuide":
             let images = [UIImage.imageWithColor(color: .red), UIImage.imageWithColor(color: .green), UIImage.imageWithColor(color: .blue)]
             let vc = ImageGuideViewController(images: images)
+            vc.title = title
             vc.show()
+        case "WebView":
+            let vc = WebViewController(url: URL(string: "https://www.baidu.com")!)
+            vc.title = title
+            navigationController?.pushViewController(vc, animated: true)
         default:
             break
         }
