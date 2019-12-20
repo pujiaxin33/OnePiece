@@ -37,6 +37,13 @@ public protocol LifecycleObserver: class {
     func willDisappear()
     func didDisappear()
 }
+public extension LifecycleObserver {
+    func dealloc(){}
+    func willAppear(){}
+    func didAppear(){}
+    func willDisappear(){}
+    func didDisappear(){}
+}
 public extension LifecycleOwner where Self: UIViewController {
     func addLifecycleObserver(_ observer: LifecycleObserver) {
         isLifecycleObserverEnabled = true
