@@ -14,6 +14,7 @@
 		193E22F123AC756400914DB3 /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 193E22F023AC756400914DB3 /* Image.swift */; };
 		197EF04923ACA61F0085B18A /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 197EF04823ACA61F0085B18A /* WebViewController.swift */; };
 		197EF04B23ACD6950085B18A /* DateFormatterManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 197EF04A23ACD6950085B18A /* DateFormatterManager.swift */; };
+		197EF04D23B059E30085B18A /* DelayManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 197EF04C23B059E30085B18A /* DelayManager.swift */; };
 		19FCE50823A9CF08003EF7FF /* OnePiece.h in Headers */ = {isa = PBXBuildFile; fileRef = 19FCE50623A9CF08003EF7FF /* OnePiece.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		19FCE53023A9CFAD003EF7FF /* Swizzle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19FCE52F23A9CFAD003EF7FF /* Swizzle.swift */; };
 		19FCE53223A9D0FB003EF7FF /* AssociatedObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19FCE53123A9D0FB003EF7FF /* AssociatedObject.swift */; };
@@ -27,6 +28,7 @@
 		193E22F023AC756400914DB3 /* Image.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Image.swift; sourceTree = "<group>"; };
 		197EF04823ACA61F0085B18A /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 		197EF04A23ACD6950085B18A /* DateFormatterManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormatterManager.swift; sourceTree = "<group>"; };
+		197EF04C23B059E30085B18A /* DelayManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DelayManager.swift; sourceTree = "<group>"; };
 		19FCE50323A9CF08003EF7FF /* OnePiece.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = OnePiece.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		19FCE50623A9CF08003EF7FF /* OnePiece.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OnePiece.h; sourceTree = "<group>"; };
 		19FCE50723A9CF08003EF7FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -82,6 +84,7 @@
 				193E229A23AC6EAC00914DB3 /* ImageGuideViewController.swift */,
 				197EF04823ACA61F0085B18A /* WebViewController.swift */,
 				197EF04A23ACD6950085B18A /* DateFormatterManager.swift */,
+				197EF04C23B059E30085B18A /* DelayManager.swift */,
 				193E22F023AC756400914DB3 /* Image.swift */,
 			);
 			path = Sources;
@@ -170,6 +173,7 @@
 				193E22F123AC756400914DB3 /* Image.swift in Sources */,
 				197EF04B23ACD6950085B18A /* DateFormatterManager.swift in Sources */,
 				19FCE53223A9D0FB003EF7FF /* AssociatedObject.swift in Sources */,
+				197EF04D23B059E30085B18A /* DelayManager.swift in Sources */,
 				19FCE53023A9CFAD003EF7FF /* Swizzle.swift in Sources */,
 				193E21E123AA116900914DB3 /* UserDefaults.swift in Sources */,
 				193E21EB23AB154600914DB3 /* Lifecycle.swift in Sources */,
