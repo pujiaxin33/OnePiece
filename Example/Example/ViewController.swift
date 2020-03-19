@@ -48,6 +48,14 @@ class ViewController: UITableViewController {
             let vc = WebViewController(url: URL(string: "https://www.baidu.com")!)
             vc.title = title
             navigationController?.pushViewController(vc, animated: true)
+        case "DSL AttributedString":
+            let vc = AttributedStringViewController()
+            vc.title = title
+            navigationController?.pushViewController(vc, animated: true)
+        case "DSL Alert":
+            let vc = AlertViewController()
+            vc.title = title
+            navigationController?.pushViewController(vc, animated: true)
         default:
             break
         }

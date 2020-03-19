@@ -12,6 +12,8 @@
 		193E21ED23AB1F6100914DB3 /* GifImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 193E21EC23AB1F6100914DB3 /* GifImageView.swift */; };
 		193E21EF23AB1FB600914DB3 /* GifViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 193E21EE23AB1FB600914DB3 /* GifViewController.swift */; };
 		193E224523AB5D7D00914DB3 /* LifeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 193E224423AB5D7D00914DB3 /* LifeView.swift */; };
+		198832B8242339FF005673F3 /* AttributedStringViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 198832B7242339FF005673F3 /* AttributedStringViewController.swift */; };
+		198832BC24236610005673F3 /* AlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 198832BB24236610005673F3 /* AlertViewController.swift */; };
 		19FCE51B23A9CF1F003EF7FF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19FCE51A23A9CF1F003EF7FF /* AppDelegate.swift */; };
 		19FCE51F23A9CF1F003EF7FF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19FCE51E23A9CF1F003EF7FF /* ViewController.swift */; };
 		19FCE52223A9CF1F003EF7FF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19FCE52023A9CF1F003EF7FF /* Main.storyboard */; };
@@ -54,6 +56,8 @@
 		193E21EC23AB1F6100914DB3 /* GifImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GifImageView.swift; sourceTree = "<group>"; };
 		193E21EE23AB1FB600914DB3 /* GifViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GifViewController.swift; sourceTree = "<group>"; };
 		193E224423AB5D7D00914DB3 /* LifeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LifeView.swift; sourceTree = "<group>"; };
+		198832B7242339FF005673F3 /* AttributedStringViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttributedStringViewController.swift; sourceTree = "<group>"; };
+		198832BB24236610005673F3 /* AlertViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertViewController.swift; sourceTree = "<group>"; };
 		19FCE51723A9CF1F003EF7FF /* Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		19FCE51A23A9CF1F003EF7FF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		19FCE51E23A9CF1F003EF7FF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -116,6 +120,8 @@
 				193E21EE23AB1FB600914DB3 /* GifViewController.swift */,
 				193E21EC23AB1F6100914DB3 /* GifImageView.swift */,
 				193E224423AB5D7D00914DB3 /* LifeView.swift */,
+				198832B7242339FF005673F3 /* AttributedStringViewController.swift */,
+				198832BB24236610005673F3 /* AlertViewController.swift */,
 				19FCE52023A9CF1F003EF7FF /* Main.storyboard */,
 				19FCE52323A9CF20003EF7FF /* Assets.xcassets */,
 				19FCE52523A9CF20003EF7FF /* LaunchScreen.storyboard */,
@@ -247,7 +253,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				193E224523AB5D7D00914DB3 /* LifeView.swift in Sources */,
+				198832B8242339FF005673F3 /* AttributedStringViewController.swift in Sources */,
 				193E21EF23AB1FB600914DB3 /* GifViewController.swift in Sources */,
+				198832BC24236610005673F3 /* AlertViewController.swift in Sources */,
 				193E21E923AA160400914DB3 /* TimerViewController.swift in Sources */,
 				193E21ED23AB1F6100914DB3 /* GifImageView.swift in Sources */,
 				19FCE51F23A9CF1F003EF7FF /* ViewController.swift in Sources */,
@@ -353,6 +361,7 @@
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -406,6 +415,7 @@
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
