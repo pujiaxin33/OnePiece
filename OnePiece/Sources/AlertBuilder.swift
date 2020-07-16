@@ -69,6 +69,6 @@ public func ActionSheet(title: String?, message: String?, @ActionBuilder actions
     return UIAlertController(title: title, message: message, style: .actionSheet, actions: actions)
 }
 
-public func ForIn<S: Sequence>(_ sequence: S, @ActionBuilder _ actions: (S.Element) -> Action) -> [Action] {
+public func ForIn<S: Sequence>(_ sequence: S, actions: (S.Element) -> Action) -> [Action] {
     return sequence.map(actions)
 }

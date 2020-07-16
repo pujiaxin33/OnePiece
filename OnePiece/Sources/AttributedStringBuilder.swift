@@ -78,7 +78,7 @@ public extension NSAttributedString {
     }
 }
 
-public extension NSAttributedString {
+extension NSAttributedString {
     func apply(_ attributes: [NSAttributedString.Key:Any]) -> NSAttributedString {
         let mutable = NSMutableAttributedString(string: self.string, attributes: self.attributes(at: 0, effectiveRange: nil))
         mutable.addAttributes(attributes, range: NSMakeRange(0, (self.string as NSString).length))
