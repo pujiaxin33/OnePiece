@@ -23,22 +23,22 @@ class DeallocListener: NSObject {
         get { associatedObject(key: &AssociatedObjectKey.LifecycleOwnerObserversKey) { return ([LifecycleObserver](), .OBJC_ASSOCIATION_RETAIN_NONATOMIC)} }
     }
     deinit {
-        lifecycleObservers.forEach { $0.dealloc() }
+        lifecycleObservers.forEach { $0.willDestroy() }
     }
 }
 
-public protocol LifecycleOwner: class {
+public protocol LifecycleOwner: AnyObject {
     func addLifecycleObserver(_ observer: LifecycleObserver)
 }
-public protocol LifecycleObserver: class {
-    func dealloc()
+public protocol LifecycleObserver: AnyObject {
+    func willDestroy()
     func willAppear()
     func didAppear()
     func willDisappear()
     func didDisappear()
 }
 public extension LifecycleObserver {
-    func dealloc(){}
+    func willDestroy(){}
     func willAppear(){}
     func didAppear(){}
     func willDisappear(){}

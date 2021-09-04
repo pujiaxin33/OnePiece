@@ -52,12 +52,12 @@ class AlertViewController: UIViewController {
 //            Action.cancel("Cancel")
 //        }
 
-        let dynamicAlertController = Alert(title: "Title", message: "Message") {
-            ForIn(["Action1", "Action2"]) { string in
-                Action.default(string) { print(string) }
-            }
-        }
-        dynamicAlertController.show(in: self)
+//        let dynamicAlertController = Alert(title: "Title", message: "Message") {
+//            ForIn(["Action1", "Action2"]) { string in
+//                Action.default(string) { print(string) }
+//            }
+//        }
+//        dynamicAlertController.show(in: self)
     }
 
 }

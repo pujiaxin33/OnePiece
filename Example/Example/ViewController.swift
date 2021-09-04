@@ -56,6 +56,10 @@ class ViewController: UITableViewController {
             let vc = AlertViewController()
             vc.title = title
             navigationController?.pushViewController(vc, animated: true)
+        case "MarginStackView":
+            let vc = MarginStackViewController()
+            vc.title = title
+            navigationController?.pushViewController(vc, animated: true)
         default:
             break
         }

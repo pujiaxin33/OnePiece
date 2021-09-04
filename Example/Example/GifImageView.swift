@@ -27,7 +27,7 @@ class GifImageView: UIView, LifecycleObserver {
         print(#function)
     }
 
-    func dealloc() {
+    func willDestroy() {
         print(#function)
     }
 }

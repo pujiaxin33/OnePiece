@@ -24,6 +24,7 @@
 		19FCE5F723A9EE1F003EF7FF /* ExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19FCE5F623A9EE1F003EF7FF /* ExampleTests.swift */; };
 		19FCE5FF23A9EE45003EF7FF /* AssociatedObjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19FCE5FE23A9EE45003EF7FF /* AssociatedObjectTests.swift */; };
 		19FCE65523A9F582003EF7FF /* SwizzleMethodTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19FCE65423A9F582003EF7FF /* SwizzleMethodTests.swift */; };
+		EA2B868926E2EAFD00115670 /* MarginStackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA2B868826E2EAFD00115670 /* MarginStackViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +72,7 @@
 		19FCE5F823A9EE1F003EF7FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		19FCE5FE23A9EE45003EF7FF /* AssociatedObjectTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssociatedObjectTests.swift; sourceTree = "<group>"; };
 		19FCE65423A9F582003EF7FF /* SwizzleMethodTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwizzleMethodTests.swift; sourceTree = "<group>"; };
+		EA2B868826E2EAFD00115670 /* MarginStackViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarginStackViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +124,7 @@
 				193E224423AB5D7D00914DB3 /* LifeView.swift */,
 				198832B7242339FF005673F3 /* AttributedStringViewController.swift */,
 				198832BB24236610005673F3 /* AlertViewController.swift */,
+				EA2B868826E2EAFD00115670 /* MarginStackViewController.swift */,
 				19FCE52023A9CF1F003EF7FF /* Main.storyboard */,
 				19FCE52323A9CF20003EF7FF /* Assets.xcassets */,
 				19FCE52523A9CF20003EF7FF /* LaunchScreen.storyboard */,
@@ -257,6 +260,7 @@
 				193E21EF23AB1FB600914DB3 /* GifViewController.swift in Sources */,
 				198832BC24236610005673F3 /* AlertViewController.swift in Sources */,
 				193E21E923AA160400914DB3 /* TimerViewController.swift in Sources */,
+				EA2B868926E2EAFD00115670 /* MarginStackViewController.swift in Sources */,
 				193E21ED23AB1F6100914DB3 /* GifImageView.swift in Sources */,
 				19FCE51F23A9CF1F003EF7FF /* ViewController.swift in Sources */,
 				19FCE51B23A9CF1F003EF7FF /* AppDelegate.swift in Sources */,
