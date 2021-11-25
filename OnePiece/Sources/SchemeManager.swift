@@ -46,7 +46,7 @@ public enum SchemeError: Error {
     case sourceTargetSame
 }
 
-public protocol SchemeTargetPage: class {
+public protocol SchemeTargetPage: AnyObject {
     static func page(with info: SchemeInfo) -> UIViewController?
 }
 

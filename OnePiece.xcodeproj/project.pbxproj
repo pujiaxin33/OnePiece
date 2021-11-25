@@ -7,14 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		191B9FA424C0301000E45441 /* Line.swift in Sources */ = {isa = PBXBuildFile; fileRef = 191B9FA324C0301000E45441 /* Line.swift */; };
+		191B9FA424C0301000E45441 /* Lineable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 191B9FA324C0301000E45441 /* Lineable.swift */; };
 		191BA1F224C177FA00E45441 /* Resources.swift in Sources */ = {isa = PBXBuildFile; fileRef = 191BA1F124C177FA00E45441 /* Resources.swift */; };
 		191BA1F424C1787000E45441 /* Compatible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 191BA1F324C1787000E45441 /* Compatible.swift */; };
 		191BA1F624C179E300E45441 /* Defines.swift in Sources */ = {isa = PBXBuildFile; fileRef = 191BA1F524C179E300E45441 /* Defines.swift */; };
 		191BA1F824C17AA700E45441 /* GlobalFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 191BA1F724C17AA700E45441 /* GlobalFunctions.swift */; };
 		193E21E123AA116900914DB3 /* UserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 193E21E023AA116900914DB3 /* UserDefaults.swift */; };
-		193E21E523AA130300914DB3 /* Timer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 193E21E423AA130300914DB3 /* Timer.swift */; };
-		193E21EB23AB154600914DB3 /* Lifecycle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 193E21EA23AB154600914DB3 /* Lifecycle.swift */; };
 		193E229B23AC6EAC00914DB3 /* ImageGuideViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 193E229A23AC6EAC00914DB3 /* ImageGuideViewController.swift */; };
 		193E22F123AC756400914DB3 /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 193E22F023AC756400914DB3 /* Image.swift */; };
 		197EF04923ACA61F0085B18A /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 197EF04823ACA61F0085B18A /* WebViewController.swift */; };
@@ -26,18 +24,15 @@
 		19FCE50823A9CF08003EF7FF /* OnePiece.h in Headers */ = {isa = PBXBuildFile; fileRef = 19FCE50623A9CF08003EF7FF /* OnePiece.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		19FCE53023A9CFAD003EF7FF /* Swizzle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19FCE52F23A9CFAD003EF7FF /* Swizzle.swift */; };
 		19FCE53223A9D0FB003EF7FF /* AssociatedObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19FCE53123A9D0FB003EF7FF /* AssociatedObject.swift */; };
-		EA2B868726E2E5D500115670 /* MarginStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA2B868626E2E5D500115670 /* MarginStackView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		191B9FA324C0301000E45441 /* Line.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Line.swift; sourceTree = "<group>"; };
+		191B9FA324C0301000E45441 /* Lineable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lineable.swift; sourceTree = "<group>"; };
 		191BA1F124C177FA00E45441 /* Resources.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Resources.swift; sourceTree = "<group>"; };
 		191BA1F324C1787000E45441 /* Compatible.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Compatible.swift; sourceTree = "<group>"; };
 		191BA1F524C179E300E45441 /* Defines.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Defines.swift; sourceTree = "<group>"; };
 		191BA1F724C17AA700E45441 /* GlobalFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalFunctions.swift; sourceTree = "<group>"; };
 		193E21E023AA116900914DB3 /* UserDefaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaults.swift; sourceTree = "<group>"; };
-		193E21E423AA130300914DB3 /* Timer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Timer.swift; sourceTree = "<group>"; };
-		193E21EA23AB154600914DB3 /* Lifecycle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lifecycle.swift; sourceTree = "<group>"; };
 		193E229A23AC6EAC00914DB3 /* ImageGuideViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageGuideViewController.swift; sourceTree = "<group>"; };
 		193E22F023AC756400914DB3 /* Image.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Image.swift; sourceTree = "<group>"; };
 		197EF04823ACA61F0085B18A /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
@@ -51,7 +46,6 @@
 		19FCE50723A9CF08003EF7FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		19FCE52F23A9CFAD003EF7FF /* Swizzle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Swizzle.swift; sourceTree = "<group>"; };
 		19FCE53123A9D0FB003EF7FF /* AssociatedObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssociatedObject.swift; sourceTree = "<group>"; };
-		EA2B868626E2E5D500115670 /* MarginStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarginStackView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,12 +88,11 @@
 		19FCE52E23A9CF58003EF7FF /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				EAF8D59D274F8FAC00AE1569 /* ResultBuilder */,
 				EA2B868526E2E59700115670 /* UIKit */,
 				19FCE52F23A9CFAD003EF7FF /* Swizzle.swift */,
 				19FCE53123A9D0FB003EF7FF /* AssociatedObject.swift */,
 				193E21E023AA116900914DB3 /* UserDefaults.swift */,
-				193E21E423AA130300914DB3 /* Timer.swift */,
-				193E21EA23AB154600914DB3 /* Lifecycle.swift */,
 				197EF04A23ACD6950085B18A /* DateFormatterManager.swift */,
 				197EF04C23B059E30085B18A /* DelayManager.swift */,
 				19CF65F223B09A32008F104A /* SchemeManager.swift */,
@@ -114,15 +107,21 @@
 		EA2B868526E2E59700115670 /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
-				198832B9242361DE005673F3 /* AlertBuilder.swift */,
-				198832B524231FED005673F3 /* AttributedStringBuilder.swift */,
 				193E22F023AC756400914DB3 /* Image.swift */,
-				191B9FA324C0301000E45441 /* Line.swift */,
+				191B9FA324C0301000E45441 /* Lineable.swift */,
 				197EF04823ACA61F0085B18A /* WebViewController.swift */,
 				193E229A23AC6EAC00914DB3 /* ImageGuideViewController.swift */,
-				EA2B868626E2E5D500115670 /* MarginStackView.swift */,
 			);
 			path = UIKit;
+			sourceTree = "<group>";
+		};
+		EAF8D59D274F8FAC00AE1569 /* ResultBuilder */ = {
+			isa = PBXGroup;
+			children = (
+				198832B9242361DE005673F3 /* AlertBuilder.swift */,
+				198832B524231FED005673F3 /* AttributedStringBuilder.swift */,
+			);
+			path = ResultBuilder;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -211,15 +210,12 @@
 				191BA1F224C177FA00E45441 /* Resources.swift in Sources */,
 				19CF65F323B09A32008F104A /* SchemeManager.swift in Sources */,
 				197EF04D23B059E30085B18A /* DelayManager.swift in Sources */,
-				191B9FA424C0301000E45441 /* Line.swift in Sources */,
+				191B9FA424C0301000E45441 /* Lineable.swift in Sources */,
 				198832BA242361DE005673F3 /* AlertBuilder.swift in Sources */,
 				191BA1F824C17AA700E45441 /* GlobalFunctions.swift in Sources */,
-				EA2B868726E2E5D500115670 /* MarginStackView.swift in Sources */,
 				19FCE53023A9CFAD003EF7FF /* Swizzle.swift in Sources */,
 				193E21E123AA116900914DB3 /* UserDefaults.swift in Sources */,
-				193E21EB23AB154600914DB3 /* Lifecycle.swift in Sources */,
 				191BA1F424C1787000E45441 /* Compatible.swift in Sources */,
-				193E21E523AA130300914DB3 /* Timer.swift in Sources */,
 				193E229B23AC6EAC00914DB3 /* ImageGuideViewController.swift in Sources */,
 				198832B624231FED005673F3 /* AttributedStringBuilder.swift in Sources */,
 				197EF04923ACA61F0085B18A /* WebViewController.swift in Sources */,

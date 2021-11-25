@@ -17,13 +17,10 @@ class AttributedStringViewController: UIViewController {
 
         view.backgroundColor = .white
 
-
         let attri = NSAttributedString {
-            NSAttributedString(string: "开始").foregroundColor(.red).font(.systemFont(ofSize: 18))
-            NSAttributedString(string: "中间").underline(.red, style: .double).font(.systemFont(ofSize: 25))
-            NSAttributedString(string: "结尾").foregroundColor(.green).font(.systemFont(ofSize: 10))
-            //下面这种方式暂时不行，多半是系统的问题
-//            "期望".foregroundColor(.blue).font(.systemFont(ofSize: 15))
+            AText("开始").foregroundColor(.red).font(.systemFont(ofSize: 18))
+            AText("中间").underline(.red, style: .double).font(.systemFont(ofSize: 25))
+            AText("结尾").foregroundColor(.green).font(.systemFont(ofSize: 10)).apply([.backgroundColor: UIColor.lightGray])
         }
         contentLabel.attributedText = attri
         view.addSubview(contentLabel)
