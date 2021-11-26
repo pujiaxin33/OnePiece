@@ -24,6 +24,7 @@
 		19FCE50823A9CF08003EF7FF /* OnePiece.h in Headers */ = {isa = PBXBuildFile; fileRef = 19FCE50623A9CF08003EF7FF /* OnePiece.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		19FCE53023A9CFAD003EF7FF /* Swizzle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19FCE52F23A9CFAD003EF7FF /* Swizzle.swift */; };
 		19FCE53223A9D0FB003EF7FF /* AssociatedObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19FCE53123A9D0FB003EF7FF /* AssociatedObject.swift */; };
+		EA79CF6F2750DB020065FB25 /* AnyBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA79CF6E2750DB020065FB25 /* AnyBuilder.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +47,7 @@
 		19FCE50723A9CF08003EF7FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		19FCE52F23A9CFAD003EF7FF /* Swizzle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Swizzle.swift; sourceTree = "<group>"; };
 		19FCE53123A9D0FB003EF7FF /* AssociatedObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssociatedObject.swift; sourceTree = "<group>"; };
+		EA79CF6E2750DB020065FB25 /* AnyBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnyBuilder.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +122,7 @@
 			children = (
 				198832B9242361DE005673F3 /* AlertBuilder.swift */,
 				198832B524231FED005673F3 /* AttributedStringBuilder.swift */,
+				EA79CF6E2750DB020065FB25 /* AnyBuilder.swift */,
 			);
 			path = ResultBuilder;
 			sourceTree = "<group>";
@@ -211,6 +214,7 @@
 				19CF65F323B09A32008F104A /* SchemeManager.swift in Sources */,
 				197EF04D23B059E30085B18A /* DelayManager.swift in Sources */,
 				191B9FA424C0301000E45441 /* Lineable.swift in Sources */,
+				EA79CF6F2750DB020065FB25 /* AnyBuilder.swift in Sources */,
 				198832BA242361DE005673F3 /* AlertBuilder.swift in Sources */,
 				191BA1F824C17AA700E45441 /* GlobalFunctions.swift in Sources */,
 				19FCE53023A9CFAD003EF7FF /* Swizzle.swift in Sources */,

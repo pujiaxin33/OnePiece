@@ -8,54 +8,82 @@
 
 import UIKit
 
-@resultBuilder
-public struct AttributedStringBuilder {
-    public static func buildBlock(_ components: NSAttributedString...) -> NSAttributedString {
+public extension NSAttributedString {
+    convenience init(@AnyBuilder<NSAttributedString> _ strings: () -> [NSAttributedString] ) {
         let result = NSMutableAttributedString()
-        components.forEach { result.append($0) }
-        return result
-    }
-
-    public static func buildIf(_ component: NSAttributedString?) -> NSAttributedString {
-        //todo
-        return component ?? NSAttributedString(string: "")
-    }
-
-    public static func buildEither(first component: NSAttributedString) -> NSAttributedString {
-        return component
-    }
-
-    public static func buildEither(second component: NSAttributedString) -> NSAttributedString {
-        return component
+        strings().forEach { result.append($0) }
+        self.init(attributedString: result)
     }
 }
 
 public extension NSAttributedString {
-    convenience init(@AttributedStringBuilder _ content: () -> NSAttributedString ) {
-        self.init(attributedString: content())
+    func font(_ font: UIFont) -> NSAttributedString {
+        self.apply([.font: font])
     }
-}
-
-public extension NSAttributedString {
     func foregroundColor(_ color: UIColor) -> NSAttributedString {
         self.apply([.foregroundColor : color])
     }
     func background(_ color: UIColor) -> NSAttributedString {
         self.apply([.backgroundColor: color])
     }
+    func paragraphStyle(_ paragraphStyle: NSParagraphStyle) -> NSAttributedString {
+        self.apply([.paragraphStyle: paragraphStyle])
+    }
+    func ligature(_ ligature: Int) -> NSAttributedString {
+        self.apply([.ligature: ligature])
+    }
+    func kern(_ kern: Int) -> NSAttributedString {
+        self.apply([.kern: kern])
+    }
+    @available(iOS 14.0, *)
+    func tracking(_ tracking: Int) -> NSAttributedString {
+        self.apply([.tracking: tracking])
+    }
+    func strikethroughStyle(_ strikethroughStyle: Int) -> NSAttributedString {
+        self.apply([.strikethroughStyle: strikethroughStyle])
+    }
     func underline(_ color: UIColor, style: NSUnderlineStyle = .single) -> NSAttributedString {
         self.apply([.underlineColor: color, .underlineStyle: style.rawValue])
     }
-    func font(_ font: UIFont) -> NSAttributedString {
-        self.apply([.font: font])
+    func strokeColor(_ color: UIColor) -> NSAttributedString {
+        self.apply([.strokeColor : color])
+    }
+    func strokeWidth(_ strokeWidth: CGFloat) -> NSAttributedString {
+        self.apply([.strokeWidth: strokeWidth])
     }
     func shadow(_ shadow: NSShadow) -> NSAttributedString {
-        self.apply([.shadow:shadow])
+        self.apply([.shadow: shadow])
+    }
+    func textEffect(_ textEffect: String) -> NSAttributedString {
+        self.apply([.textEffect: textEffect])
+    }
+    func attachment(_ attachment: NSTextAttachment) -> NSAttributedString {
+        self.apply([.attachment: attachment])
     }
     func link(_ link: URL) -> NSAttributedString {
-        self.apply([.link:link])
+        self.apply([.link: link])
     }
-    //todo
+    func baselineOffset(_ baselineOffset: CGFloat) -> NSAttributedString {
+        self.apply([.baselineOffset: baselineOffset])
+    }
+    func underlineColor(_ underlineColor: UIColor) -> NSAttributedString {
+        self.apply([.underlineColor: underlineColor])
+    }
+    func strikethroughColor(_ strikethroughColor: UIColor) -> NSAttributedString {
+        self.apply([.strikethroughColor: strikethroughColor])
+    }
+    func obliqueness(_ obliqueness: CGFloat) -> NSAttributedString {
+        self.apply([.obliqueness: obliqueness])
+    }
+    func expansion(_ expansion: CGFloat) -> NSAttributedString {
+        self.apply([.expansion: expansion])
+    }
+    func writingDirection(_ writingDirection: [NSWritingDirection]) -> NSAttributedString {
+        self.apply([.writingDirection: writingDirection.map{$0.rawValue}])
+    }
+    func verticalGlyphForm(_ verticalGlyphForm: Bool) -> NSAttributedString {
+        self.apply([.verticalGlyphForm: verticalGlyphForm])
+    }
 }
 
 public extension NSAttributedString {
