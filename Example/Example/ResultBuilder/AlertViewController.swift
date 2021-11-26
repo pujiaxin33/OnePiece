@@ -9,7 +9,7 @@
 import UIKit
 import OnePiece
 
-class AlertViewController: UIViewController {
+class AlertViewController: UITableViewController {
     var canEdit = true
     
     override func viewDidLoad() {
@@ -18,6 +18,22 @@ class AlertViewController: UIViewController {
         view.backgroundColor = .white
     }
 
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        switch indexPath.row {
+        case 0:
+            showAlert1()
+        case 1:
+            showAlert2()
+        case 2:
+            showAlert3()
+        case 3:
+            showAlert4()
+        case 4:
+            showAlert5()
+        default:
+            break
+        }
+    }
     func showAlert1() {
         let alert = UIAlertController(title: "标题", message: "消息", style: .alert) {
             Action.cancel("取消") {
@@ -73,11 +89,15 @@ class AlertViewController: UIViewController {
                 Action.destructive("编辑") {
                     print("编辑")
                 }
-            } else {
-                Action.destructive("分享") {
-                    print("分享")
+                Action.destructive("编辑") {
+                    print("编辑")
                 }
             }
+//            else {
+//                Action.destructive("分享") {
+//                    print("分享")
+//                }
+//            }
             Action.cancel("取消")
         }
         present(alert, animated: true, completion: nil)

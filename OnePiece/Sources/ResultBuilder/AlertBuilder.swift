@@ -9,6 +9,19 @@
 import Foundation
 import UIKit
 
+public protocol ActionsConvertible {
+    func asActions() -> [Action]
+}
+extension Array: ActionsConvertible where Element == Action {
+    public func asActions() -> [Action] {
+        return self
+    }
+}
+extension Action: ActionsConvertible {
+    public func asActions() -> [Action] {
+        return [self]
+    }
+}
 public class Action {
     public var title: String
     public var style: UIAlertAction.Style
@@ -30,27 +43,19 @@ public class Action {
     }
 }
 
-fileprivate class ActionBox: Action {
-    fileprivate var actions = [Action]()
-    fileprivate init(actions: [Action]) {
-        self.actions = actions
-        super.init(title: "", style: .default, handler: nil)
-    }
-}
-
 @resultBuilder
 public struct ActionBuilder {
-    public static func buildBlock(_ children: Action...) -> [Action] {
-        return children
+    public static func buildBlock(_ children: ActionsConvertible...) -> [Action] {
+        return children.flatMap { $0.asActions() }
     }
-    public static func buildIf(_ actions: [Action]?) -> Action {
-        return ActionBox(actions: actions ?? [])
+    public static func buildIf(_ actions: ActionsConvertible?) -> ActionsConvertible {
+        return actions ?? []
     }
-    public static func buildEither(first actions: [Action]) -> Action {
-        return ActionBox(actions: actions)
+    public static func buildEither(first actions: ActionsConvertible) -> ActionsConvertible {
+        return actions
     }
-    public static func buildEither(second actions: [Action]) -> Action {
-        return ActionBox(actions: actions)
+    public static func buildEither(second actions: ActionsConvertible) -> ActionsConvertible {
+        return actions
     }
 }
 
@@ -58,23 +63,9 @@ public extension UIAlertController {
     convenience init(title: String?, message: String?, style: UIAlertController.Style, @ActionBuilder actions: () -> [Action]) {
         self.init(title: title, message: message, preferredStyle: style)
         for action in actions() {
-            if let box = action as? ActionBox {
-                for ifAction in box.actions {
-                    self.addAction(UIAlertAction(title: ifAction.title, style: ifAction.style) { _ in
-                        ifAction.handler?()
-                    })
-                }
-            }else if let box = action as? ForEachIdentifier {
-                for forEachAction in box.actions {
-                    self.addAction(UIAlertAction(title: forEachAction.title, style: forEachAction.style) { _ in
-                        forEachAction.handler?()
-                    })
-                }
-            }else {
-                self.addAction(UIAlertAction(title: action.title, style: action.style) { _ in
-                    action.handler?()
-                })
-            }
+            self.addAction(UIAlertAction(title: action.title, style: action.style) { _ in
+                action.handler?()
+            })
         }
     }
 }
@@ -87,26 +78,21 @@ public func ActionSheet(title: String?, message: String?, @ActionBuilder actions
     return UIAlertController(title: title, message: message, style: .actionSheet, actions: actions)
 }
 
-public class ForEach<Data>: Action where Data : RandomAccessCollection {
+public class ForEach<Data> where Data : RandomAccessCollection {
     let data: Data
     var actions = [Action]()
-    public init(_ data: Data, content: @escaping (Data.Element) -> Action) {
+    public init(_ data: Data, @ActionBuilder content: @escaping (Data.Element) -> [Action]) {
         self.data = data
         var items = [Action]()
         for item in data {
-            let action = content(item)
-            items.append(action)
+            let actions = content(item)
+            items.append(contentsOf: actions)
         }
         self.actions = items
-        super.init(title: "", style: .default, handler: nil)
-    }
-    
-    public required init?(coder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
     }
 }
-
-fileprivate protocol ForEachIdentifier {
-    var actions: [Action] { get }
+extension ForEach: ActionsConvertible {
+    public func asActions() -> [Action] {
+        return actions
+    }
 }
-extension ForEach: ForEachIdentifier {}
