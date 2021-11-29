@@ -29,6 +29,8 @@
 		EA79CF80275474030065FB25 /* Data+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA79CF7F275474030065FB25 /* Data+Utils.swift */; };
 		EA79CF82275474EF0065FB25 /* String+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA79CF81275474EF0065FB25 /* String+Utils.swift */; };
 		EA79CF84275476FC0065FB25 /* Date+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA79CF83275476FC0065FB25 /* Date+Utils.swift */; };
+		EA79CF882754B5D70065FB25 /* NotificationDefines.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA79CF872754B5D70065FB25 /* NotificationDefines.swift */; };
+		EA79CF8A2754B6B70065FB25 /* PictureSheetController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA79CF892754B6B70065FB25 /* PictureSheetController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,6 +58,8 @@
 		EA79CF7F275474030065FB25 /* Data+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Data+Utils.swift"; sourceTree = "<group>"; };
 		EA79CF81275474EF0065FB25 /* String+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Utils.swift"; sourceTree = "<group>"; };
 		EA79CF83275476FC0065FB25 /* Date+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Utils.swift"; sourceTree = "<group>"; };
+		EA79CF872754B5D70065FB25 /* NotificationDefines.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationDefines.swift; sourceTree = "<group>"; };
+		EA79CF892754B6B70065FB25 /* PictureSheetController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PictureSheetController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +119,7 @@
 				191B9FA324C0301000E45441 /* Lineable.swift */,
 				197EF04823ACA61F0085B18A /* BrowserController.swift */,
 				193E229A23AC6EAC00914DB3 /* ImageGuideViewController.swift */,
+				EA79CF892754B6B70065FB25 /* PictureSheetController.swift */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
@@ -152,6 +157,7 @@
 			isa = PBXGroup;
 			children = (
 				191BA1F524C179E300E45441 /* Defines.swift */,
+				EA79CF872754B5D70065FB25 /* NotificationDefines.swift */,
 				19FCE53123A9D0FB003EF7FF /* AssociatedObject.swift */,
 				19FCE52F23A9CFAD003EF7FF /* Swizzle.swift */,
 				191BA1F724C17AA700E45441 /* GlobalFunctions.swift */,
@@ -264,6 +270,7 @@
 				191BA1F224C177FA00E45441 /* Resources.swift in Sources */,
 				19CF65F323B09A32008F104A /* SchemeManager.swift in Sources */,
 				191B9FA424C0301000E45441 /* Lineable.swift in Sources */,
+				EA79CF8A2754B6B70065FB25 /* PictureSheetController.swift in Sources */,
 				EA79CF82275474EF0065FB25 /* String+Utils.swift in Sources */,
 				EA79CF6F2750DB020065FB25 /* AnyBuilder.swift in Sources */,
 				198832BA242361DE005673F3 /* AlertBuilder.swift in Sources */,
@@ -272,6 +279,7 @@
 				EA79CF80275474030065FB25 /* Data+Utils.swift in Sources */,
 				EA79CF76275471C10065FB25 /* FactoryDefines.swift in Sources */,
 				19FCE53023A9CFAD003EF7FF /* Swizzle.swift in Sources */,
+				EA79CF882754B5D70065FB25 /* NotificationDefines.swift in Sources */,
 				EA79CF7C275473130065FB25 /* UIImage+Utils.swift in Sources */,
 				193E21E123AA116900914DB3 /* UserDefaults+Ex.swift in Sources */,
 				EA79CF84275476FC0065FB25 /* Date+Utils.swift in Sources */,
