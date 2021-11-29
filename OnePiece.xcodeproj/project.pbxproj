@@ -9,12 +9,11 @@
 /* Begin PBXBuildFile section */
 		191B9FA424C0301000E45441 /* Lineable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 191B9FA324C0301000E45441 /* Lineable.swift */; };
 		191BA1F224C177FA00E45441 /* Resources.swift in Sources */ = {isa = PBXBuildFile; fileRef = 191BA1F124C177FA00E45441 /* Resources.swift */; };
-		191BA1F424C1787000E45441 /* Compatible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 191BA1F324C1787000E45441 /* Compatible.swift */; };
 		191BA1F624C179E300E45441 /* Defines.swift in Sources */ = {isa = PBXBuildFile; fileRef = 191BA1F524C179E300E45441 /* Defines.swift */; };
 		191BA1F824C17AA700E45441 /* GlobalFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 191BA1F724C17AA700E45441 /* GlobalFunctions.swift */; };
-		193E21E123AA116900914DB3 /* UserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 193E21E023AA116900914DB3 /* UserDefaults.swift */; };
+		193E21E123AA116900914DB3 /* UserDefaults+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 193E21E023AA116900914DB3 /* UserDefaults+Ex.swift */; };
 		193E229B23AC6EAC00914DB3 /* ImageGuideViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 193E229A23AC6EAC00914DB3 /* ImageGuideViewController.swift */; };
-		197EF04923ACA61F0085B18A /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 197EF04823ACA61F0085B18A /* WebViewController.swift */; };
+		197EF04923ACA61F0085B18A /* BrowserController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 197EF04823ACA61F0085B18A /* BrowserController.swift */; };
 		197EF04B23ACD6950085B18A /* DateFormatterManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 197EF04A23ACD6950085B18A /* DateFormatterManager.swift */; };
 		198832B624231FED005673F3 /* AttributedStringBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 198832B524231FED005673F3 /* AttributedStringBuilder.swift */; };
 		198832BA242361DE005673F3 /* AlertBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 198832B9242361DE005673F3 /* AlertBuilder.swift */; };
@@ -35,12 +34,11 @@
 /* Begin PBXFileReference section */
 		191B9FA324C0301000E45441 /* Lineable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lineable.swift; sourceTree = "<group>"; };
 		191BA1F124C177FA00E45441 /* Resources.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Resources.swift; sourceTree = "<group>"; };
-		191BA1F324C1787000E45441 /* Compatible.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Compatible.swift; sourceTree = "<group>"; };
 		191BA1F524C179E300E45441 /* Defines.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Defines.swift; sourceTree = "<group>"; };
 		191BA1F724C17AA700E45441 /* GlobalFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalFunctions.swift; sourceTree = "<group>"; };
-		193E21E023AA116900914DB3 /* UserDefaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaults.swift; sourceTree = "<group>"; };
+		193E21E023AA116900914DB3 /* UserDefaults+Ex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserDefaults+Ex.swift"; sourceTree = "<group>"; };
 		193E229A23AC6EAC00914DB3 /* ImageGuideViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageGuideViewController.swift; sourceTree = "<group>"; };
-		197EF04823ACA61F0085B18A /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
+		197EF04823ACA61F0085B18A /* BrowserController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrowserController.swift; sourceTree = "<group>"; };
 		197EF04A23ACD6950085B18A /* DateFormatterManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormatterManager.swift; sourceTree = "<group>"; };
 		198832B524231FED005673F3 /* AttributedStringBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttributedStringBuilder.swift; sourceTree = "<group>"; };
 		198832B9242361DE005673F3 /* AlertBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertBuilder.swift; sourceTree = "<group>"; };
@@ -100,20 +98,13 @@
 		19FCE52E23A9CF58003EF7FF /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				EA79CF862754A1670065FB25 /* Manager */,
+				EA79CF852754A1570065FB25 /* Base */,
 				EA79CF782754728A0065FB25 /* Utils */,
 				EA79CF772754725C0065FB25 /* Extensions */,
 				EA79CF74275471910065FB25 /* Factory */,
 				EAF8D59D274F8FAC00AE1569 /* ResultBuilder */,
 				EA2B868526E2E59700115670 /* UIKit */,
-				19FCE52F23A9CFAD003EF7FF /* Swizzle.swift */,
-				19FCE53123A9D0FB003EF7FF /* AssociatedObject.swift */,
-				193E21E023AA116900914DB3 /* UserDefaults.swift */,
-				197EF04A23ACD6950085B18A /* DateFormatterManager.swift */,
-				19CF65F223B09A32008F104A /* SchemeManager.swift */,
-				191BA1F124C177FA00E45441 /* Resources.swift */,
-				191BA1F324C1787000E45441 /* Compatible.swift */,
-				191BA1F524C179E300E45441 /* Defines.swift */,
-				191BA1F724C17AA700E45441 /* GlobalFunctions.swift */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -122,7 +113,7 @@
 			isa = PBXGroup;
 			children = (
 				191B9FA324C0301000E45441 /* Lineable.swift */,
-				197EF04823ACA61F0085B18A /* WebViewController.swift */,
+				197EF04823ACA61F0085B18A /* BrowserController.swift */,
 				193E229A23AC6EAC00914DB3 /* ImageGuideViewController.swift */,
 			);
 			path = UIKit;
@@ -139,6 +130,7 @@
 		EA79CF772754725C0065FB25 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				193E21E023AA116900914DB3 /* UserDefaults+Ex.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -154,6 +146,27 @@
 				EA79CF83275476FC0065FB25 /* Date+Utils.swift */,
 			);
 			path = Utils;
+			sourceTree = "<group>";
+		};
+		EA79CF852754A1570065FB25 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				191BA1F524C179E300E45441 /* Defines.swift */,
+				19FCE53123A9D0FB003EF7FF /* AssociatedObject.swift */,
+				19FCE52F23A9CFAD003EF7FF /* Swizzle.swift */,
+				191BA1F724C17AA700E45441 /* GlobalFunctions.swift */,
+				191BA1F124C177FA00E45441 /* Resources.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		EA79CF862754A1670065FB25 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				19CF65F223B09A32008F104A /* SchemeManager.swift */,
+				197EF04A23ACD6950085B18A /* DateFormatterManager.swift */,
+			);
+			path = Manager;
 			sourceTree = "<group>";
 		};
 		EAF8D59D274F8FAC00AE1569 /* ResultBuilder */ = {
@@ -260,13 +273,12 @@
 				EA79CF76275471C10065FB25 /* FactoryDefines.swift in Sources */,
 				19FCE53023A9CFAD003EF7FF /* Swizzle.swift in Sources */,
 				EA79CF7C275473130065FB25 /* UIImage+Utils.swift in Sources */,
-				193E21E123AA116900914DB3 /* UserDefaults.swift in Sources */,
+				193E21E123AA116900914DB3 /* UserDefaults+Ex.swift in Sources */,
 				EA79CF84275476FC0065FB25 /* Date+Utils.swift in Sources */,
 				EA79CF7E275473AD0065FB25 /* Int+Utils.swift in Sources */,
-				191BA1F424C1787000E45441 /* Compatible.swift in Sources */,
 				193E229B23AC6EAC00914DB3 /* ImageGuideViewController.swift in Sources */,
 				198832B624231FED005673F3 /* AttributedStringBuilder.swift in Sources */,
-				197EF04923ACA61F0085B18A /* WebViewController.swift in Sources */,
+				197EF04923ACA61F0085B18A /* BrowserController.swift in Sources */,
 				191BA1F624C179E300E45441 /* Defines.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

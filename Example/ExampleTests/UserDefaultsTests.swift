@@ -28,15 +28,6 @@ class UserDefaultsTests: XCTestCase {
         // Use XCTAssert and related functions to verify your tests produce the correct results.
         let result = UserDefaults.standard.array(forKey: UserDefaultsKey.testArray, defaultValue: [1, 2, 3])
         assert(result.count == 3)
-
-        let textKey = DefaultsKey<String?>.init("some")
-        let text = Defaults[textKey]
-        print(text ?? "")
-        
-        let intKey = DefaultsKey<Int>.init(key: "int", defaultValue: 3)
-        print(Defaults[intKey])
-
-        
     }
 
 

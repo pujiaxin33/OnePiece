@@ -8,6 +8,7 @@
 
 import UIKit
 
+/// 只是板代码，不能直接使用，需要自行修改。
 public class ImageGuideViewController: UIViewController {
     private lazy var window: UIWindow = UIWindow(frame: UIScreen.main.bounds)
     private lazy var pageControl: UIPageControl = UIPageControl()

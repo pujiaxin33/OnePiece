@@ -9,6 +9,7 @@
 import Foundation
 import UIKit
 
+//将字符串、颜色值、尺寸、数字、全局变量等硬编码，集合在一个地方定义，方便查看和修改。
 public typealias ColorResource = Resource.Color
 public typealias TextResource = Resource.Text
 public typealias DimensionResource = Resource.Dimension

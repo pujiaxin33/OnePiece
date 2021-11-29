@@ -8,28 +8,6 @@
 
 import Foundation
 
-/*
-public class SwizzleMethodExecutor {
-    public func execute() {
-        UIView.executeSwizzleMethod
-    }
-}
-extension UIView {
-    static let executeSwizzleMethod: Void = {
-        swizzleInstanceMethod(target: UIView(), originalSelector: #selector(addSubview(_:)), newSelector: #selector(swizzledAddSubview(_:)))
-        swizzleClassMethod(target: UIView(), originalSelector: #selector(setAnimationsEnabled(_:)), newSelector: #selector(swizzledSetAnimationsEnabled(_:)))
-    }()
-    @objc private func swizzledAddSubview(_ view: UIView) {
-        swizzledAddSubview(view)
-        let label = UILabel()
-        swizzledAddSubview(label)
-    }
-    @objc private class func swizzledSetAnimationsEnabled(_ enabled: Bool) {
-        swizzledSetAnimationsEnabled(true)
-    }
-}
-*/
-
 @discardableResult
 public func swizzleInstanceMethod(target: Any?, originalSelector: Selector, newSelector: Selector) -> Bool {
     let targetClass: AnyClass? = object_getClass(target)
