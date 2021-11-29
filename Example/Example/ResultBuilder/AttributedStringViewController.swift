@@ -29,6 +29,9 @@ class AttributedStringViewController: UIViewController {
                 AText(string)
                 AText("\n")
             }
+            for string in ["ForEach:a", "ForEach:b", "ForEach:c"] {
+                AText(string)
+            }
             if self.isShowName {
                 AText("if true show One Piece")
             }

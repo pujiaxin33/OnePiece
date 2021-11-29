@@ -9,32 +9,33 @@
 import Foundation
 
 @resultBuilder
-public enum AnyBuilder<BuilderItem> {
-    public static func buildExpression(_ expression: BuilderItem) -> [BuilderItem] {
+public enum AnyBuilder<Expression> {
+    public typealias Component = [Expression]
+    public static func buildExpression(_ expression: Expression) -> Component {
         return [expression]
     }
-    public static func buildExpression<Data: RandomAccessCollection>(_ expression: ForEach<Data, BuilderItem>) -> [BuilderItem] {
+    public static func buildExpression<Data: RandomAccessCollection>(_ expression: ForEach<Data, Expression>) -> Component {
         return expression.items
     }
-    public static func buildExpression(_ expression: ()) -> [BuilderItem] {
+    public static func buildExpression(_ expression: ()) -> Component {
         return []
     }
-    public static func buildBlock(_ components: [BuilderItem]...) -> [BuilderItem] {
+    public static func buildBlock(_ components: Component...) -> Component {
         return components.flatMap { $0 }
     }
-    public static func buildBlock(_ components: BuilderItem...) -> [BuilderItem] {
+    public static func buildBlock(_ components: Expression...) -> Component {
         return components.map { $0 }
     }
-    public static func buildIf(_ component: [BuilderItem]?) -> [BuilderItem] {
+    public static func buildOptional(_ component: Component?) -> Component {
         return component ?? []
     }
-    public static func buildEither(first component: [BuilderItem]) -> [BuilderItem] {
+    public static func buildEither(first component: Component) -> Component {
         return component
     }
-    public static func buildEither(second component: [BuilderItem]) -> [BuilderItem] {
+    public static func buildEither(second component: Component) -> Component {
         return component
     }
-    public static func buildArray(_ components: [[BuilderItem]]) -> [BuilderItem] {
+    public static func buildArray(_ components: [Component]) -> Component {
         Array(components.joined())
     }
 }
