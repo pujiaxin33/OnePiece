@@ -34,6 +34,7 @@
 		EA79CF8C2754B7E50065FB25 /* UIResponder+Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA79CF8B2754B7E50065FB25 /* UIResponder+Event.swift */; };
 		EA79CF902754BBCB0065FB25 /* SettingsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA79CF8F2754BBCB0065FB25 /* SettingsCell.swift */; };
 		EA79CF922754C3060065FB25 /* PickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA79CF912754C3060065FB25 /* PickerView.swift */; };
+		EA79CF942754CC630065FB25 /* GetVCodeButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA79CF932754CC630065FB25 /* GetVCodeButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -66,6 +67,7 @@
 		EA79CF8B2754B7E50065FB25 /* UIResponder+Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIResponder+Event.swift"; sourceTree = "<group>"; };
 		EA79CF8F2754BBCB0065FB25 /* SettingsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsCell.swift; sourceTree = "<group>"; };
 		EA79CF912754C3060065FB25 /* PickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerView.swift; sourceTree = "<group>"; };
+		EA79CF932754CC630065FB25 /* GetVCodeButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetVCodeButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,6 +130,7 @@
 				EA79CF892754B6B70065FB25 /* PictureSheetController.swift */,
 				EA79CF8F2754BBCB0065FB25 /* SettingsCell.swift */,
 				EA79CF912754C3060065FB25 /* PickerView.swift */,
+				EA79CF932754CC630065FB25 /* GetVCodeButton.swift */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
@@ -299,6 +302,7 @@
 				193E229B23AC6EAC00914DB3 /* ImageGuideViewController.swift in Sources */,
 				198832B624231FED005673F3 /* AttributedStringBuilder.swift in Sources */,
 				197EF04923ACA61F0085B18A /* BrowserController.swift in Sources */,
+				EA79CF942754CC630065FB25 /* GetVCodeButton.swift in Sources */,
 				191BA1F624C179E300E45441 /* Defines.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -437,7 +441,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = OnePiece/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -463,7 +467,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = OnePiece/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
