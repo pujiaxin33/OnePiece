@@ -22,8 +22,8 @@ public struct LineWrapper<Base> {
 public extension LineWrapper where Base: UIView {
     var topLine: UIView? { return base.topLine }
     var bottomLine: UIView? { return base.bottomLine }
-    var leftLine: UIView? { return base.leftLine }
-    var rightLine: UIView? { return base.rightLine }
+    var leadingLine: UIView? { return base.leadingLine }
+    var trailingLine: UIView? { return base.trailingLine }
     
     func addTop(lineWidth: CGFloat = 1/UIScreen.main.scale, insets: UIEdgeInsets = .zero, lineColor: UIColor = UIColor.lightGray) {
         removeTop()
@@ -49,25 +49,25 @@ public extension LineWrapper where Base: UIView {
     }
     func addLeading(lineWidth: CGFloat = 1/UIScreen.main.scale, insets: UIEdgeInsets = .zero, lineColor: UIColor = UIColor.lightGray) {
         removeLeading()
-        base.leftLine = UIView()
-        base.leftLine?.backgroundColor = lineColor
-        base.addSubview(base.leftLine!)
-        base.leftLine?.translatesAutoresizingMaskIntoConstraints = false
-        base.leftLine?.topAnchor.constraint(equalTo: base.topAnchor, constant: insets.top).isActive = true
-        base.leftLine?.leadingAnchor.constraint(equalTo: base.leadingAnchor, constant: insets.left).isActive = true
-        base.leftLine?.bottomAnchor.constraint(equalTo: base.bottomAnchor, constant: -insets.bottom).isActive = true
-        base.leftLine?.widthAnchor.constraint(equalToConstant: lineWidth).isActive = true
+        base.leadingLine = UIView()
+        base.leadingLine?.backgroundColor = lineColor
+        base.addSubview(base.leadingLine!)
+        base.leadingLine?.translatesAutoresizingMaskIntoConstraints = false
+        base.leadingLine?.topAnchor.constraint(equalTo: base.topAnchor, constant: insets.top).isActive = true
+        base.leadingLine?.leadingAnchor.constraint(equalTo: base.leadingAnchor, constant: insets.left).isActive = true
+        base.leadingLine?.bottomAnchor.constraint(equalTo: base.bottomAnchor, constant: -insets.bottom).isActive = true
+        base.leadingLine?.widthAnchor.constraint(equalToConstant: lineWidth).isActive = true
     }
     func addTrailinng(lineWidth: CGFloat = 1/UIScreen.main.scale, insets: UIEdgeInsets = .zero, lineColor: UIColor = UIColor.lightGray) {
         removeTrailing()
-        base.rightLine = UIView()
-        base.rightLine?.backgroundColor = lineColor
-        base.addSubview(base.rightLine!)
-        base.rightLine?.translatesAutoresizingMaskIntoConstraints = false
-        base.rightLine?.topAnchor.constraint(equalTo: base.topAnchor, constant: insets.top).isActive = true
-        base.rightLine?.trailingAnchor.constraint(equalTo: base.trailingAnchor, constant: -insets.right).isActive = true
-        base.rightLine?.bottomAnchor.constraint(equalTo: base.bottomAnchor, constant: -insets.bottom).isActive = true
-        base.rightLine?.widthAnchor.constraint(equalToConstant: lineWidth).isActive = true
+        base.trailingLine = UIView()
+        base.trailingLine?.backgroundColor = lineColor
+        base.addSubview(base.trailingLine!)
+        base.trailingLine?.translatesAutoresizingMaskIntoConstraints = false
+        base.trailingLine?.topAnchor.constraint(equalTo: base.topAnchor, constant: insets.top).isActive = true
+        base.trailingLine?.trailingAnchor.constraint(equalTo: base.trailingAnchor, constant: -insets.right).isActive = true
+        base.trailingLine?.bottomAnchor.constraint(equalTo: base.bottomAnchor, constant: -insets.bottom).isActive = true
+        base.trailingLine?.widthAnchor.constraint(equalToConstant: lineWidth).isActive = true
     }
     func removeAll() {
         removeTop()
@@ -84,12 +84,12 @@ public extension LineWrapper where Base: UIView {
         base.bottomLine = nil
     }
     func removeLeading() {
-        base.leftLine?.removeFromSuperview()
-        base.leftLine = nil
+        base.leadingLine?.removeFromSuperview()
+        base.leadingLine = nil
     }
     func removeTrailing() {
-        base.rightLine?.removeFromSuperview()
-        base.rightLine = nil
+        base.trailingLine?.removeFromSuperview()
+        base.trailingLine = nil
     }
 }
 struct LineAssociatedKeys {
@@ -107,11 +107,11 @@ extension UIView {
         set { objc_setAssociatedObject(self, &LineAssociatedKeys.bottomLine, newValue, .OBJC_ASSOCIATION_RETAIN_NONATOMIC) }
         get { return objc_getAssociatedObject(self, &LineAssociatedKeys.bottomLine) as? UIView }
     }
-    fileprivate var leftLine: UIView? {
+    fileprivate var leadingLine: UIView? {
         set { objc_setAssociatedObject(self, &LineAssociatedKeys.leadingLine, newValue, .OBJC_ASSOCIATION_RETAIN_NONATOMIC) }
         get { return objc_getAssociatedObject(self, &LineAssociatedKeys.leadingLine) as? UIView }
     }
-    fileprivate var rightLine: UIView? {
+    fileprivate var trailingLine: UIView? {
         set { objc_setAssociatedObject(self, &LineAssociatedKeys.trailingLine, newValue, .OBJC_ASSOCIATION_RETAIN_NONATOMIC) }
         get { return objc_getAssociatedObject(self, &LineAssociatedKeys.trailingLine) as? UIView }
     }
