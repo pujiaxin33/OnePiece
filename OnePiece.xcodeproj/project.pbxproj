@@ -32,6 +32,7 @@
 		EA79CF882754B5D70065FB25 /* NotificationDefines.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA79CF872754B5D70065FB25 /* NotificationDefines.swift */; };
 		EA79CF8A2754B6B70065FB25 /* PictureSheetController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA79CF892754B6B70065FB25 /* PictureSheetController.swift */; };
 		EA79CF8C2754B7E50065FB25 /* UIResponder+Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA79CF8B2754B7E50065FB25 /* UIResponder+Event.swift */; };
+		EA79CF902754BBCB0065FB25 /* SettingsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA79CF8F2754BBCB0065FB25 /* SettingsCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -62,6 +63,7 @@
 		EA79CF872754B5D70065FB25 /* NotificationDefines.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationDefines.swift; sourceTree = "<group>"; };
 		EA79CF892754B6B70065FB25 /* PictureSheetController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PictureSheetController.swift; sourceTree = "<group>"; };
 		EA79CF8B2754B7E50065FB25 /* UIResponder+Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIResponder+Event.swift"; sourceTree = "<group>"; };
+		EA79CF8F2754BBCB0065FB25 /* SettingsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +124,7 @@
 				197EF04823ACA61F0085B18A /* BrowserController.swift */,
 				193E229A23AC6EAC00914DB3 /* ImageGuideViewController.swift */,
 				EA79CF892754B6B70065FB25 /* PictureSheetController.swift */,
+				EA79CF8F2754BBCB0065FB25 /* SettingsCell.swift */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
@@ -282,6 +285,7 @@
 				EA79CF80275474030065FB25 /* Data+Utils.swift in Sources */,
 				EA79CF76275471C10065FB25 /* FactoryDefines.swift in Sources */,
 				19FCE53023A9CFAD003EF7FF /* Swizzle.swift in Sources */,
+				EA79CF902754BBCB0065FB25 /* SettingsCell.swift in Sources */,
 				EA79CF882754B5D70065FB25 /* NotificationDefines.swift in Sources */,
 				EA79CF8C2754B7E50065FB25 /* UIResponder+Event.swift in Sources */,
 				EA79CF7C275473130065FB25 /* UIImage+Utils.swift in Sources */,
