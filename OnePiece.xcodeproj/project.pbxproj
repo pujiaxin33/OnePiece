@@ -35,6 +35,7 @@
 		EA79CF902754BBCB0065FB25 /* SettingsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA79CF8F2754BBCB0065FB25 /* SettingsCell.swift */; };
 		EA79CF922754C3060065FB25 /* PickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA79CF912754C3060065FB25 /* PickerView.swift */; };
 		EA79CF942754CC630065FB25 /* GetVCodeButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA79CF932754CC630065FB25 /* GetVCodeButton.swift */; };
+		EA79CF962754CD510065FB25 /* TitleImageButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA79CF952754CD510065FB25 /* TitleImageButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -68,6 +69,7 @@
 		EA79CF8F2754BBCB0065FB25 /* SettingsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsCell.swift; sourceTree = "<group>"; };
 		EA79CF912754C3060065FB25 /* PickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerView.swift; sourceTree = "<group>"; };
 		EA79CF932754CC630065FB25 /* GetVCodeButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetVCodeButton.swift; sourceTree = "<group>"; };
+		EA79CF952754CD510065FB25 /* TitleImageButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleImageButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,6 +133,7 @@
 				EA79CF8F2754BBCB0065FB25 /* SettingsCell.swift */,
 				EA79CF912754C3060065FB25 /* PickerView.swift */,
 				EA79CF932754CC630065FB25 /* GetVCodeButton.swift */,
+				EA79CF952754CD510065FB25 /* TitleImageButton.swift */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
@@ -291,6 +294,7 @@
 				EA79CF80275474030065FB25 /* Data+Utils.swift in Sources */,
 				EA79CF922754C3060065FB25 /* PickerView.swift in Sources */,
 				EA79CF76275471C10065FB25 /* FactoryDefines.swift in Sources */,
+				EA79CF962754CD510065FB25 /* TitleImageButton.swift in Sources */,
 				19FCE53023A9CFAD003EF7FF /* Swizzle.swift in Sources */,
 				EA79CF902754BBCB0065FB25 /* SettingsCell.swift in Sources */,
 				EA79CF882754B5D70065FB25 /* NotificationDefines.swift in Sources */,
