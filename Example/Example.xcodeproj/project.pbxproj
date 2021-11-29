@@ -21,6 +21,7 @@
 		19FCE5FF23A9EE45003EF7FF /* AssociatedObjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19FCE5FE23A9EE45003EF7FF /* AssociatedObjectTests.swift */; };
 		19FCE65523A9F582003EF7FF /* SwizzleMethodTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19FCE65423A9F582003EF7FF /* SwizzleMethodTests.swift */; };
 		EA79CF7327546D6D0065FB25 /* LineableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA79CF7227546D6D0065FB25 /* LineableViewController.swift */; };
+		EA79CF8E2754B8E00065FB25 /* ChainEventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA79CF8D2754B8E00065FB25 /* ChainEventViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +66,7 @@
 		19FCE5FE23A9EE45003EF7FF /* AssociatedObjectTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssociatedObjectTests.swift; sourceTree = "<group>"; };
 		19FCE65423A9F582003EF7FF /* SwizzleMethodTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwizzleMethodTests.swift; sourceTree = "<group>"; };
 		EA79CF7227546D6D0065FB25 /* LineableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineableViewController.swift; sourceTree = "<group>"; };
+		EA79CF8D2754B8E00065FB25 /* ChainEventViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChainEventViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,6 +146,7 @@
 			isa = PBXGroup;
 			children = (
 				EA79CF7227546D6D0065FB25 /* LineableViewController.swift */,
+				EA79CF8D2754B8E00065FB25 /* ChainEventViewController.swift */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
@@ -262,6 +265,7 @@
 				198832B8242339FF005673F3 /* AttributedStringViewController.swift in Sources */,
 				198832BC24236610005673F3 /* AlertViewController.swift in Sources */,
 				EA79CF7327546D6D0065FB25 /* LineableViewController.swift in Sources */,
+				EA79CF8E2754B8E00065FB25 /* ChainEventViewController.swift in Sources */,
 				19FCE51F23A9CF1F003EF7FF /* ViewController.swift in Sources */,
 				19FCE51B23A9CF1F003EF7FF /* AppDelegate.swift in Sources */,
 			);

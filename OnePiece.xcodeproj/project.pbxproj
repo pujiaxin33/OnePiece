@@ -31,6 +31,7 @@
 		EA79CF84275476FC0065FB25 /* Date+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA79CF83275476FC0065FB25 /* Date+Utils.swift */; };
 		EA79CF882754B5D70065FB25 /* NotificationDefines.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA79CF872754B5D70065FB25 /* NotificationDefines.swift */; };
 		EA79CF8A2754B6B70065FB25 /* PictureSheetController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA79CF892754B6B70065FB25 /* PictureSheetController.swift */; };
+		EA79CF8C2754B7E50065FB25 /* UIResponder+Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA79CF8B2754B7E50065FB25 /* UIResponder+Event.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -60,6 +61,7 @@
 		EA79CF83275476FC0065FB25 /* Date+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Utils.swift"; sourceTree = "<group>"; };
 		EA79CF872754B5D70065FB25 /* NotificationDefines.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationDefines.swift; sourceTree = "<group>"; };
 		EA79CF892754B6B70065FB25 /* PictureSheetController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PictureSheetController.swift; sourceTree = "<group>"; };
+		EA79CF8B2754B7E50065FB25 /* UIResponder+Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIResponder+Event.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,6 +138,7 @@
 			isa = PBXGroup;
 			children = (
 				193E21E023AA116900914DB3 /* UserDefaults+Ex.swift */,
+				EA79CF8B2754B7E50065FB25 /* UIResponder+Event.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -280,6 +283,7 @@
 				EA79CF76275471C10065FB25 /* FactoryDefines.swift in Sources */,
 				19FCE53023A9CFAD003EF7FF /* Swizzle.swift in Sources */,
 				EA79CF882754B5D70065FB25 /* NotificationDefines.swift in Sources */,
+				EA79CF8C2754B7E50065FB25 /* UIResponder+Event.swift in Sources */,
 				EA79CF7C275473130065FB25 /* UIImage+Utils.swift in Sources */,
 				193E21E123AA116900914DB3 /* UserDefaults+Ex.swift in Sources */,
 				EA79CF84275476FC0065FB25 /* Date+Utils.swift in Sources */,
