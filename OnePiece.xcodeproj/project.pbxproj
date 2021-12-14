@@ -36,6 +36,7 @@
 		EA79CF922754C3060065FB25 /* PickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA79CF912754C3060065FB25 /* PickerView.swift */; };
 		EA79CF942754CC630065FB25 /* GetVCodeButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA79CF932754CC630065FB25 /* GetVCodeButton.swift */; };
 		EA79CF962754CD510065FB25 /* TitleImageButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA79CF952754CD510065FB25 /* TitleImageButton.swift */; };
+		EA7EB20D276844200023AFC3 /* EmptyableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA7EB20C276844200023AFC3 /* EmptyableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -70,6 +71,7 @@
 		EA79CF912754C3060065FB25 /* PickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerView.swift; sourceTree = "<group>"; };
 		EA79CF932754CC630065FB25 /* GetVCodeButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetVCodeButton.swift; sourceTree = "<group>"; };
 		EA79CF952754CD510065FB25 /* TitleImageButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleImageButton.swift; sourceTree = "<group>"; };
+		EA7EB20C276844200023AFC3 /* EmptyableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,6 +136,7 @@
 				EA79CF912754C3060065FB25 /* PickerView.swift */,
 				EA79CF932754CC630065FB25 /* GetVCodeButton.swift */,
 				EA79CF952754CD510065FB25 /* TitleImageButton.swift */,
+				EA7EB20C276844200023AFC3 /* EmptyableViewController.swift */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
@@ -308,6 +311,7 @@
 				197EF04923ACA61F0085B18A /* BrowserController.swift in Sources */,
 				EA79CF942754CC630065FB25 /* GetVCodeButton.swift in Sources */,
 				191BA1F624C179E300E45441 /* Defines.swift in Sources */,
+				EA7EB20D276844200023AFC3 /* EmptyableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
