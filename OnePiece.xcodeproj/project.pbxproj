@@ -37,6 +37,7 @@
 		EA79CF942754CC630065FB25 /* GetVCodeButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA79CF932754CC630065FB25 /* GetVCodeButton.swift */; };
 		EA79CF962754CD510065FB25 /* TitleImageButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA79CF952754CD510065FB25 /* TitleImageButton.swift */; };
 		EA7EB20D276844200023AFC3 /* EmptyableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA7EB20C276844200023AFC3 /* EmptyableViewController.swift */; };
+		EA7EB20F276844990023AFC3 /* PageHeaderRefreshableFooterLoadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA7EB20E276844990023AFC3 /* PageHeaderRefreshableFooterLoadable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -72,6 +73,7 @@
 		EA79CF932754CC630065FB25 /* GetVCodeButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetVCodeButton.swift; sourceTree = "<group>"; };
 		EA79CF952754CD510065FB25 /* TitleImageButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleImageButton.swift; sourceTree = "<group>"; };
 		EA7EB20C276844200023AFC3 /* EmptyableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyableViewController.swift; sourceTree = "<group>"; };
+		EA7EB20E276844990023AFC3 /* PageHeaderRefreshableFooterLoadable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageHeaderRefreshableFooterLoadable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,6 +139,7 @@
 				EA79CF932754CC630065FB25 /* GetVCodeButton.swift */,
 				EA79CF952754CD510065FB25 /* TitleImageButton.swift */,
 				EA7EB20C276844200023AFC3 /* EmptyableViewController.swift */,
+				EA7EB20E276844990023AFC3 /* PageHeaderRefreshableFooterLoadable.swift */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
@@ -293,6 +296,7 @@
 				EA79CF6F2750DB020065FB25 /* AnyBuilder.swift in Sources */,
 				198832BA242361DE005673F3 /* AlertBuilder.swift in Sources */,
 				EA79CF7A275472A50065FB25 /* UtilsDefines.swift in Sources */,
+				EA7EB20F276844990023AFC3 /* PageHeaderRefreshableFooterLoadable.swift in Sources */,
 				191BA1F824C17AA700E45441 /* GlobalFunctions.swift in Sources */,
 				EA79CF80275474030065FB25 /* Data+Utils.swift in Sources */,
 				EA79CF922754C3060065FB25 /* PickerView.swift in Sources */,

@@ -8,10 +8,10 @@
 
 import UIKit
 
-protocol EmptyView: UIView {
+public protocol EmptyView: UIView {
     func emptyButton() -> UIButton?
 }
-protocol EmptyableViewController: UIViewController {
+public protocol EmptyableViewController: UIViewController {
     associatedtype EmptyViewType: EmptyView
     var emptyView: EmptyViewType { get }
     func emptyContainerView() -> UIView
